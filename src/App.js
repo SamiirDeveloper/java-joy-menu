@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import MenuStyles from './MenuStyles.css';
+import Coffees from './Coffees';
+import Teas from './Teas';
+import Pastries from './Pastries'; // Assuming Pastries component exists
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="menu-board">
+      <Coffees />
+      <Teas />
+      <Pastries />
     </div>
-  );
+
+  )
 }
 
 export default App;
